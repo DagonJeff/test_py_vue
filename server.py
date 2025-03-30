@@ -28,8 +28,23 @@ def search():
 
         results = results.fillna('') 
         response = results.to_dict(orient='records')
-        print(response)  
-        return jsonify(response)
+
+        # Filtrar os campos desejados
+        filtered_response = []
+        for record in response:
+            filtered_record = {
+                "Registro_ANS": record.get("Registro_ANS"),
+                "Razao_Social": record.get("Razao_Social"),
+                "Modalidade": record.get("Modalidade"),
+                "Cidade": record.get("Cidade"),
+                "UF": record.get("UF"),
+                "DDD": record.get("DDD"),
+                "Telefone": record.get("Telefone")
+            }
+            filtered_response.append(filtered_record)
+
+        print(filtered_response)  
+        return jsonify(filtered_response)
     except Exception as e:
         print(f"Erro ao processar a solicitação: {e}")
         return jsonify({"error": str(e)}), 500
