@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "4f6ccf73-d96b-4ba5-b7fd-6c4ae222c25f",
+		"name": "Test_py_vue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41958855"
+	},
+	"item": [
+		{
+			"name": "Busca por Modalidade",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?query=Medicina de Grupo&column=Modalidade",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Medicina de Grupo"
+						},
+						{
+							"key": "column",
+							"value": "Modalidade"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Razão Social",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?query=HAPVIDA ASSISTENCIA MEDICA S.A.&column=Razao_Social",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "HAPVIDA ASSISTENCIA MEDICA S.A."
+						},
+						{
+							"key": "column",
+							"value": "Razao_Social"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Nome Fantasia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?query=SMILE&column=Nome_Fantasia",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "SMILE"
+						},
+						{
+							"key": "column",
+							"value": "Nome_Fantasia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Cidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?query=João Pessoa&column=Cidade",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "João Pessoa"
+						},
+						{
+							"key": "column",
+							"value": "Cidade"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Data de Registro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?query=11-11-1999&column=Data_Registro_ANS",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "11-11-1999"
+						},
+						{
+							"key": "column",
+							"value": "Data_Registro_ANS"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
